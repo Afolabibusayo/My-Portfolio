@@ -324,6 +324,11 @@ span{
     border-radius: 5px;
 }
 
+.contacts .imgg{
+    text-decoration: none;
+
+}
+
 .contact-me .form .contacts{
     text-align: left;
 } 
