@@ -2,12 +2,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Inter", serif;
 }
 
 .wrapper{
     background-color: rgb(36, 35, 35);
     color: white;
 } 
+
 
 /* header section starts */
 .myName {
@@ -16,7 +18,7 @@
 }
 
 .header{
-    /* background-image: url(./Media/codes\ ss.png); */
+    background-image: url(./Media/codes\ ss.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -40,14 +42,15 @@
 }
 
 
-.header-head .nav .nav{
+.header-head .nav{
     display: flex;
+    align-items: center;
     gap: 20px;
     padding-inline: 10px;
     list-style-type: none;
     font-size: 20px;
     font-weight: 700;
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
 }
 
 .nav ul li a{
@@ -104,26 +107,47 @@ span{
     /* flex-direction: row; */
 }
 
+.header .nav .button{
+    background-color: aqua;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 20px;
+    color: rgb(48, 47, 47);
+}
+
 .header .texts{
     padding: 30px 0;
 }
 
 .header .texts p{
     font-size: 2rem;
+    opacity: 1;
 }
 
 .icons{
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 15px;
+    /* gap: 0; */
+    width: 30%;
+    margin: auto;
     cursor: pointer;
     margin-top: 10px;
 }
 
 .icons img{
-    width: 3%;
+    width: 50%;
     border-radius: 50%;
+    /* text-align: center; */
+    margin: 5px;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.icons a{
+    text-align: center;
+    
 }
 
 .nav .menu-button{
@@ -142,7 +166,7 @@ span{
     text-align: center;
     margin: 0;
     font-weight: 300;
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
 }
 
 .service .serve{
@@ -169,7 +193,8 @@ span{
     padding-block: 35px;    
     padding-inline: 30px;   
     color: black;
-    font-family: 'Times New Roman', Times, serif;
+    height: 300px;
+    /* font-family: 'Times New Roman', Times, serif; */
 }
 
 
@@ -178,8 +203,9 @@ span{
     border-radius: 5px;
     padding-block: 35px;
     padding-inline: 30px;
+    height: 300px;
     color: white;
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
     background-color: rgb(75, 73, 73);
 }
 
@@ -212,14 +238,14 @@ span{
     min-width: 160px;
     margin-top: 0;
     font-weight: 400;
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
 }
 
 /* service section ends */
 /* about-me section starts */
 
 .about-me{
-    background-color: black;
+    background-color: rgb(58, 57, 57);
     text-align: center;
     padding: 1rem;
 }
@@ -234,7 +260,7 @@ span{
     margin: 0;
     font-size: 1.5rem;
     padding: 5px;
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
 }
 
 .about-me .content-box{
@@ -252,7 +278,7 @@ span{
     font-size: 1rem;
     text-align: left;
     color: wheat;
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
     margin-block: 20px;
 }
 
@@ -266,6 +292,92 @@ span{
 }
 
 /* about-me section ends */
+/* contact-me section starts */
+
+.contact-me{
+    background-color: black;
+    padding-block: 20px;
+    text-align: center;
+}
+
+.contact-me .get{
+    opacity: .5;
+    font-size: 10px;
+}
+
+.contact-me .currently{
+    padding:10px 5px;
+    font-size: 18px;
+    color: white;
+}
+
+.contact-me .form{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+    align-items: flex-start;
+    background-color: rgb(31, 29, 29);
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contact-me .form .contacts{
+    text-align: left;
+} 
+
+.contact-me .form .contacts .imgg{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding-block: 5px;
+}
+
+.contact-me .form .contacts .imgg span{
+    color: rgb(44, 201, 201);
+}
+
+.contact-me .form .form-div{
+    text-align: left;
+}
+
+.contact-me .form .form-div label{
+    opacity: .5;
+}
+
+.contact-me .form .form-div input{
+    padding: 5px 10px;
+    border: 1px solid grey;
+    background-color: rgb(58, 57, 57);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: white;
+    opacity: .3;
+
+}
+
+.contact-me .form .form-div textarea{
+    border: 1px solid grey;
+    background-color: rgb(58, 57, 57);
+    border-radius: 8px;
+    color: white;
+    opacity: .3;
+    padding-left: 10px;
+}
+
+.contact-me .form .form-div .btn{
+    background-color: aqua;
+    opacity: 1;
+    color: black;
+    padding: 7px;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+
+/* contact-me section ends */
 /* footer section starts */
 
 .footer{
@@ -306,8 +418,20 @@ span{
     opacity: .7;
 }
 
+/* footer section ends */
+/* copy-right section starts */
+
+.copy-right{
+    text-align: center;
+    padding-block: 10px;
+    border-top: 1.5px solid grey;
+}
+
 
 @media  screen and (max-width:700px){
+    .header{
+        background-image: none;
+    }
     .nav .menu-button{
         display: block;
     }
@@ -320,6 +444,20 @@ span{
         margin-top: 15px;
     }
 
+    .icons{
+        width: 50%;
+    }
+
+    .icons img{
+        width: 70%;
+    }
+
+   
+    .header .nav .sidebar .button{
+        color: rgb(48, 47, 47);
+
+    }
+
 
     .ser-con {
         display:flex;
@@ -329,6 +467,10 @@ span{
 
     .content-box {
         display: flex;
+        flex-direction: column;
+    }
+
+    .contact-me .form{
         flex-direction: column;
     }
 
@@ -357,6 +499,20 @@ span{
 
 @media (max-width: 400px) {
 
+    .icons{
+        width: 50%;
+    }
+
+    .icons img{
+        width: 70%;
+    }
+
+    .header .nav .sidebar .button{
+        color: rgb(48, 47, 47);
+
+    }
+
+
     .sidebar{
         width: 100%;
     }
@@ -370,9 +526,13 @@ span{
         display: flex;
         flex-direction: column;
     }
-
+    
     .header .texts p{
         font-size: 1.2rem;
+    }
+    
+    .contact-me .form{
+        flex-direction: column;
     }
 
     .footer{
@@ -385,6 +545,7 @@ span{
         border: none;
         text-align: left;
     }
+
 
 
 }
