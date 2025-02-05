@@ -10,6 +10,10 @@
     color: white;
 } 
 
+#section-p1{
+    padding: 20px 40px;
+}
+
 
 /* header section starts */
 .myName {
@@ -18,7 +22,7 @@
 }
 
 .header{
-    background-image: url(./Media/codes\ ss.png);
+    background-image: url(./Media/codes\ ss.1.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -57,6 +61,7 @@
     text-decoration: none;
     color: white;
     font-size: 25px;
+    white-space: nowrap;
 }
 
 span{
@@ -113,6 +118,7 @@ span{
     padding: 8px;
     font-size: 20px;
     color: rgb(48, 47, 47);
+    white-space: nowrap;
 }
 
 .header .texts{
@@ -241,7 +247,48 @@ span{
     /* font-family: 'Times New Roman', Times, serif; */
 }
 
+
 /* service section ends */
+
+.project{
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.project .project-texts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.project .project-texts .project-details p:nth-child(2){
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.project .project-details p{
+    text-align: left;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.project .project-details {
+    width: 32%;
+}
+
+.project .project-details .project-img{
+    padding: 20px;
+    border: 1px solid aquamarine;
+    border-radius: 5px;
+    background-color: rgb(43, 39, 39);
+}
+
+.project .project-details img{
+    width: 100%;
+    border-radius: 5px;
+}
 /* about-me section starts */
 
 .about-me{
@@ -278,6 +325,7 @@ span{
     font-size: 1rem;
     text-align: left;
     color: wheat;
+    opacity: 1;
     /* font-family: 'Times New Roman', Times, serif; */
     margin-block: 20px;
 }
@@ -301,7 +349,7 @@ span{
 }
 
 .contact-me .get{
-    opacity: .5;
+    opacity: .7;
     font-size: 10px;
 }
 
@@ -399,7 +447,7 @@ span{
 
 .footer .footer-texts{
     display: flex;
-    justify-content: center;
+    justify-content:flex-end;
     align-items: center;
     gap: 1rem;
 }
@@ -423,6 +471,32 @@ span{
     opacity: .7;
 }
 
+.footer .social p{
+    padding-block: 10px;
+}
+
+.footer .social .cta{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer .social .cta a{
+   color: whitesmoke;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+.footer .social .cta a i{
+    font-size: 15px;
+    color: whitesmoke;
+    padding-left: 5px;
+}
+
+.footer .social .cta a i:hover{
+    color: aqua;
+}
+
 /* footer section ends */
 /* copy-right section starts */
 
@@ -436,6 +510,10 @@ span{
 @media  screen and (max-width:700px){
     .header{
         background-image: none;
+    }
+
+    .texts {
+        text-align:left;
     }
     .nav .menu-button{
         display: block;
@@ -494,10 +572,25 @@ span{
         list-style-type: none;
         border: none;
         text-align: left;
+        padding-inline: 0;
     }
 
     .footer .text{
         font-size: 1.5rem;
+    }
+
+    .footer .social .cta{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .social .cta a{
+        border-left: none;
+    }
+
+    .footer .social .cta a:hover{
+        color: aqua;
+        border-bottom: none;
     }
 
 }
@@ -527,6 +620,17 @@ span{
         gap: 20px;
     }
 
+    .project .project-texts{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project .project-details {
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+
     .content-box {
         display: flex;
         flex-direction: column;
@@ -550,6 +654,12 @@ span{
         border: none;
         text-align: left;
     }
+
+    .footer .social .cta{
+    flex-direction: row;
+}
+
+
 
 
 
