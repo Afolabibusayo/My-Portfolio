@@ -64,6 +64,11 @@
     white-space: nowrap;
 }
 
+.nav ul li a:hover{
+    color: aqua;
+    transition: all 0.2s ease;
+}
+
 span{
     color:aqua;
 }
@@ -407,8 +412,8 @@ span{
     border-radius: 8px;
     margin-bottom: 10px;
     color: white;
-    opacity: .3;
-
+    /* opacity: .3; */
+    outline: none;
 }
 
 .contact-me .form .form-div textarea{
@@ -416,17 +421,20 @@ span{
     background-color: rgb(58, 57, 57);
     border-radius: 8px;
     color: white;
-    opacity: .3;
+    /* opacity: .3; */
     padding-left: 10px;
+    outline: none;
 }
 
 .contact-me .form .form-div .btn{
     background-color: aqua;
     opacity: 1;
     color: black;
+    border: none;
     padding: 7px;
     border-radius: 3px;
     margin-top: 5px;
+    cursor: pointer;
 }
 
 
@@ -463,6 +471,11 @@ span{
     text-decoration: none;
     color: white;
     text-align: left;
+}
+
+.footer .footer-texts ul a:hover{
+    color: aqua;
+    transition: all 0.2s ease;
 }
 
 .footer .footer-texts a, p{
