@@ -262,6 +262,7 @@ span{
 
 .project .project-texts{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
@@ -594,7 +595,7 @@ span{
 
     .footer .social .cta{
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 
     .footer .social .cta a{
@@ -608,7 +609,7 @@ span{
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 499px) {
 
     .icons{
         width: 50%;
@@ -623,9 +624,13 @@ span{
 
     }
 
+    .header .texts h3{
+        white-space: nowrap;
+    }
+
 
     .sidebar{
-        width: 100%;
+        width: 70%;
     }
     .ser-con {
         display:flex;
